@@ -1,7 +1,7 @@
 import Icon from '../components/Icon'
 import { BAND_QUOTES, RATING } from '../data/content'
 
-// Blue band mirroring the live site's "Many users trust Bright Kapitune" section
+// Blue band mirroring the live site's "Many users trust G-GlobalBraxen" section
 export default function ReviewsBand() {
   return (
     <section className="band has-coins">

@@ -21,7 +21,7 @@ export default function Hero() {
           </span>
 
           <h1>
-            Bright Kapitune <span className="accent">Platform</span>
+            G-GlobalBraxen <span className="accent">Platform</span>
           </h1>
 
           <p className="hero__sub">

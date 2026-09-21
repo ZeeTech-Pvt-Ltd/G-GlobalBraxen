@@ -86,7 +86,7 @@ export default function Testimonials() {
         <div className="section-head" data-reveal>
           <span className="eyebrow">Success stories</span>
           <h2>Stories from our community</h2>
-          <p>Verified feedback from Bright Kapitune members across Australia.</p>
+          <p>Verified feedback from G-GlobalBraxen members across Australia.</p>
         </div>
 
         <div

@@ -4,12 +4,12 @@ export default function TermsOfUse() {
   return (
     <LegalPage
       title="Terms of Use"
-      description="Bright Kapitune Terms of Use - the rules that govern your use of our website and trading platform."
+      description="G-GlobalBraxen Terms of Use - the rules that govern your use of our website and trading platform."
       updated="1 August 2026"
     >
       <LegalSection heading="1. Acceptance of Terms">
         <p>
-          By accessing or using the Bright Kapitune website and platform, you agree to be bound by
+          By accessing or using the G-GlobalBraxen website and platform, you agree to be bound by
           these Terms of Use. If you do not agree with any part of these terms, you must not use
           our services.
         </p>
@@ -68,14 +68,14 @@ export default function TermsOfUse() {
       <LegalSection heading="8. Intellectual Property">
         <p>
           All content on this website, including text, graphics, logos and software, is the
-          property of Bright Kapitune or its licensors and is protected by intellectual property
+          property of G-GlobalBraxen or its licensors and is protected by intellectual property
           laws. You may not reproduce or distribute it without our prior written consent.
         </p>
       </LegalSection>
 
       <LegalSection heading="9. Limitation of Liability">
         <p>
-          To the maximum extent permitted by law, Bright Kapitune shall not be liable for any
+          To the maximum extent permitted by law, G-GlobalBraxen shall not be liable for any
           indirect, incidental or consequential losses arising from your use of the platform,
           including trading losses.
         </p>

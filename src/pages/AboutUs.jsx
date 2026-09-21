@@ -17,9 +17,9 @@ const HERO_STATS = [
 
 export default function AboutUs() {
   useMeta({
-    title: 'About Bright Kapitune - AI-Powered Crypto Trading Platform',
+    title: 'About G-GlobalBraxen - AI-Powered Crypto Trading Platform',
     description:
-      'About Bright Kapitune - our story, purpose, team and the transparency and controls behind the platform.',
+      'About G-GlobalBraxen - our story, purpose, team and the transparency and controls behind the platform.',
     canonical: `${SITE_URL}/about-us`,
   })
 
@@ -38,10 +38,10 @@ export default function AboutUs() {
               About us
             </span>
             <h1 style={{ fontSize: 'clamp(40px, 5.5vw, 68px)' }}>
-              Smart, automated crypto trading with <span className="accent">Bright Kapitune</span>
+              Smart, automated crypto trading with <span className="accent">G-GlobalBraxen</span>
             </h1>
             <p className="hero__sub">
-              Bright Kapitune supports market analysis, helping you assess opportunities, respond
+              G-GlobalBraxen supports market analysis, helping you assess opportunities, respond
               efficiently and invest with greater transparency.
             </p>
             <div style={{ display: 'flex', gap: 14, marginTop: 32, flexWrap: 'wrap' }}>
@@ -138,7 +138,7 @@ export default function AboutUs() {
         <div className="container">
           <div className="section-head" data-reveal>
             <span className="eyebrow">Our purpose</span>
-            <h2>What we believe and why we created Bright Kapitune</h2>
+            <h2>What we believe and why we created G-GlobalBraxen</h2>
           </div>
           <div className="grid-3 about-values-grid" data-reveal-grid>
             {VALUES.map(({ title, text, icon }) => (
@@ -154,14 +154,14 @@ export default function AboutUs() {
           <div className="about-longterm" data-reveal>
             <strong>Think long term</strong>
             <p>
-              We are not focused on short-term gains. Bright Kapitune is built to support ongoing
+              We are not focused on short-term gains. G-GlobalBraxen is built to support ongoing
               trading through stable technology, consistent service and continuous platform
               development.
             </p>
           </div>
 
           <p style={{ marginTop: 28, color: 'var(--ink-muted)', maxWidth: 90 + 'ch' }}>
-            Whatever your experience level, Bright Kapitune is designed to help Australians trade
+            Whatever your experience level, G-GlobalBraxen is designed to help Australians trade
             with clarity. From your first crypto purchase to a diversified portfolio across forex,
             shares and commodities, the platform brings analysis, execution and account controls
             together in one place - so you can focus on the decisions that matter.

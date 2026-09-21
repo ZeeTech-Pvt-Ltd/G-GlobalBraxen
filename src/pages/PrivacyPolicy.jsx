@@ -4,12 +4,12 @@ export default function PrivacyPolicy() {
   return (
     <LegalPage
       title="Privacy Policy"
-      description="Read the Bright Kapitune Privacy Policy - how we collect, use and protect your personal information."
+      description="Read the G-GlobalBraxen Privacy Policy - how we collect, use and protect your personal information."
       updated="1 August 2026"
     >
       <LegalSection heading="1. Who We Are">
         <p>
-          This Privacy Policy explains how Bright Kapitune ("we", "us", "our") collects, uses and
+          This Privacy Policy explains how G-GlobalBraxen ("we", "us", "our") collects, uses and
           protects your personal information when you use our website and platform. We are
           committed to protecting your privacy in accordance with applicable Australian privacy
           laws.

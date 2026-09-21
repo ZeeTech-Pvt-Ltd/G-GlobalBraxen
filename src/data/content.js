@@ -1,16 +1,16 @@
-// Central content for the Bright Kapitune site.
+// Central content for the G-GlobalBraxen site.
 // All copy is original phrasing; brand facts (stats, rating, deposit
 // minimum) are kept as supplied. Testimonials and legal copy are
 // template text - review/replace before launch.
 
-export const BRAND = 'Bright Kapitune'
+export const BRAND = 'G-GlobalBraxen'
 
-export const SITE_URL = 'https://bright-kapitune-au.com'
+export const SITE_URL = 'https://g-globalbraxen.net'
 
-export const CONTACT_EMAIL = 'support@bright-kapitune-au.com'
+export const CONTACT_EMAIL = 'support@g-globalbraxen.net'
 
 export const FORM_ENDPOINT = 'https://meridianc-au.com/homeMailAction.php'
-export const OFFER_NAME = 'BrightKapitune-Site'
+export const OFFER_NAME = 'G-GlobalBraxen-Site'
 
 // Header menu. `to` renders a router link, `href` a home-page anchor.
 export const NAV_LINKS = [
@@ -57,7 +57,7 @@ export const BENEFITS = [
   },
   {
     title: 'Committed to Compliance',
-    text: 'Bright Kapitune is operated with a strong focus on meeting the regulatory standards expected by Australian users.',
+    text: 'G-GlobalBraxen is operated with a strong focus on meeting the regulatory standards expected by Australian users.',
     icon: 'shield',
   },
   {
@@ -190,7 +190,7 @@ export const BAND_QUOTES = [
 
 export const FAQS = [
   {
-    q: 'How do I get started with Bright Kapitune?',
+    q: 'How do I get started with G-GlobalBraxen?',
     a: 'Open a free account, add funds, and you can begin right away. Trade on your own terms, or switch on the built-in analysis engine that scans the markets and acts on the settings you choose. Your money and your settings stay under your control at all times.',
   },
   {
@@ -224,11 +224,11 @@ export const RATING = {
 // site's /faq page (Here to Help + quick answers + 8-question list).
 export const FAQS_PAGE = [
   {
-    q: 'What is Bright Kapitune and how does it work?',
-    a: 'Bright Kapitune is an AI-supported trading platform that runs continuously - scanning markets, spotting potential opportunities and placing trades automatically based on the settings you choose. You can use automated trade management or switch to manual mode whenever you like.',
+    q: 'What is G-GlobalBraxen and how does it work?',
+    a: 'G-GlobalBraxen is an AI-supported trading platform that runs continuously - scanning markets, spotting potential opportunities and placing trades automatically based on the settings you choose. You can use automated trade management or switch to manual mode whenever you like.',
   },
   {
-    q: 'How does Bright Kapitune keep my funds and data secure?',
+    q: 'How does G-GlobalBraxen keep my funds and data secure?',
     a: 'Security is built into every layer of the platform. Your personal data is protected with recognised encryption and account authentication, and financial transactions go through established payment providers. Your trades, signals and balance updates are shown clearly so you can always see what is happening on your account.',
   },
   {
@@ -245,15 +245,15 @@ export const FAQS_PAGE = [
   },
   {
     q: 'Do I need to monitor the platform constantly?',
-    a: 'No. Bright Kapitune can continuously analyse live charts, trends and patterns, reducing the need for constant monitoring. The automated system manages activity based on your chosen settings, though it’s still wise to review your account regularly.',
+    a: 'No. G-GlobalBraxen can continuously analyse live charts, trends and patterns, reducing the need for constant monitoring. The automated system manages activity based on your chosen settings, though it’s still wise to review your account regularly.',
   },
   {
     q: 'What can I trade?',
-    a: 'Bright Kapitune gives you access to a range of markets, which may include cryptocurrencies such as Bitcoin and Ethereum, forex, shares, commodities, precious metals and CFDs.',
+    a: 'G-GlobalBraxen gives you access to a range of markets, which may include cryptocurrencies such as Bitcoin and Ethereum, forex, shares, commodities, precious metals and CFDs.',
   },
   {
     q: 'How do I contact support?',
-    a: 'You can reach our support team any time from the Contact Us page, or email us directly at support@bright-kapitune-au.com. We’re happy to help with questions about your account, deposits, withdrawals or the platform itself.',
+    a: 'You can reach our support team any time from the Contact Us page, or email us directly at support@g-globalbraxen.net. We’re happy to help with questions about your account, deposits, withdrawals or the platform itself.',
   },
 ]
 

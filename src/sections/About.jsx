@@ -7,9 +7,9 @@ export default function About() {
       <div className="container">
         <div className="section-head" data-reveal>
           <span className="eyebrow">About the platform</span>
-          <h2>Meet the Bright Kapitune platform</h2>
+          <h2>Meet the G-GlobalBraxen platform</h2>
           <p>
-            Bright Kapitune is an online trading platform created for Australian users. It brings
+            G-GlobalBraxen is an online trading platform created for Australian users. It brings
             a broad range of markets together in one place, with tools that do the heavy lifting
             so you can focus on the decisions that matter.
           </p>
