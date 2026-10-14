@@ -42,9 +42,9 @@ export default function Header() {
         </nav>
 
         <div className="site-header__actions">
-          <a className="btn btn--lime" href="#register" onClick={(e) => handleAnchor(e, '#register')}>
+          <Link className="btn btn--lime" to="/register" onClick={() => setOpen(false)}>
             Register
-          </a>
+          </Link>
           <button
             className="menu-toggle"
             type="button"

@@ -16,6 +16,8 @@ export const OFFER_NAME = 'G-GlobalBraxen-Site'
 export const NAV_LINKS = [
   { label: 'Home', to: '/' },
   { label: 'About Us', to: '/about-us' },
+  { label: 'How It Works', to: '/how-it-works' },
+  { label: 'Reviews', to: '/g-globalbraxen-reviews' },
   { label: 'Contact Us', to: '/contact-us' },
   { label: 'FAQs', to: '/faqs' },
 ]
@@ -62,7 +64,7 @@ export const BENEFITS = [
   },
   {
     title: 'Start Small',
-    text: 'Open an account and get going with a minimum deposit of just 347 A$ - perfect for testing the waters.',
+    text: 'Open an account and get going with a minimum deposit of just 250 A$ - perfect for testing the waters.',
     icon: 'coins',
   },
   {
@@ -122,7 +124,7 @@ export const STEPS = [
   },
   {
     title: 'Deposit Funds',
-    text: 'Top up with 347 A$ or more using a card, bank transfer or e-wallet.',
+    text: 'Top up with 250 A$ or more using a card, bank transfer or e-wallet.',
   },
   {
     title: 'Start Trading',
@@ -135,6 +137,7 @@ export const TESTIMONIALS = [
     name: 'James C.',
     location: 'Sydney',
     initials: 'JC',
+    photo: '/assets/img/people/james-c.jpg',
     returnPct: '+18.2%',
     quote:
       'I had zero trading experience when I signed up. The platform walked me through everything, and within weeks I was seeing consistent results.',
@@ -143,6 +146,7 @@ export const TESTIMONIALS = [
     name: 'Olivia R.',
     location: 'Melbourne',
     initials: 'OR',
+    photo: '/assets/img/people/olivia-r.jpg',
     returnPct: '+15.6%',
     quote:
       'The dashboard is genuinely easy to use - it feels more like online banking than trading software. Withdrawals have been quick and painless.',
@@ -151,6 +155,7 @@ export const TESTIMONIALS = [
     name: 'Ethan W.',
     location: 'Brisbane',
     initials: 'EW',
+    photo: '/assets/img/people/ethan-w.jpg',
     returnPct: '+19.1%',
     quote:
       'The analysis engine surfaced opportunities I would never have found on my own. It runs in the background while I focus on my day job.',
@@ -159,6 +164,7 @@ export const TESTIMONIALS = [
     name: 'Sophie T.',
     location: 'Perth',
     initials: 'ST',
+    photo: '/assets/img/people/sophie-t.jpg',
     returnPct: '+14.3%',
     quote:
       'What sold me was the transparency. Every fee is shown upfront, and the local support team actually answers the phone.',
@@ -167,6 +173,7 @@ export const TESTIMONIALS = [
     name: 'Liam B.',
     location: 'Adelaide',
     initials: 'LB',
+    photo: '/assets/img/people/liam-b.jpg',
     returnPct: '+16.8%',
     quote:
       'I started with the minimum deposit just to test the waters. Six months later it has become a steady part of my monthly income.',
@@ -175,6 +182,7 @@ export const TESTIMONIALS = [
     name: 'Charlotte M.',
     location: 'Gold Coast',
     initials: 'CM',
+    photo: '/assets/img/people/charlotte-m.jpg',
     returnPct: '+17.4%',
     quote:
       'Round-the-clock access fits my schedule perfectly. I check in on my phone in the morning and let the automated trading handle the rest.',
@@ -207,7 +215,7 @@ export const FAQS = [
   },
   {
     q: 'Do I need any experience to use the platform?',
-    a: 'None at all. The interface was designed for first-timers, the minimum deposit is just 347 A$, and the analysis engine plus built-in guides help you build confidence step by step.',
+    a: 'None at all. The interface was designed for first-timers, the minimum deposit is just 250 A$, and the analysis engine plus built-in guides help you build confidence step by step.',
   },
   {
     q: 'Which markets can I access?',
@@ -219,6 +227,100 @@ export const RATING = {
   score: '4.7',
   reviews: 189,
 }
+
+// Star distribution for the reviews page rating summary (percentages).
+export const RATING_BREAKDOWN = [
+  { stars: 5, pct: 78 },
+  { stars: 4, pct: 14 },
+  { stars: 3, pct: 5 },
+  { stars: 2, pct: 2 },
+  { stars: 1, pct: 1 },
+]
+
+// Dedicated reviews page - member review cards. Template text flagged
+// for review before launch, same as TESTIMONIALS.
+export const REVIEW_CARDS = [
+  {
+    name: 'Daniel K.',
+    location: 'Sydney',
+    initials: 'DK',
+    photo: '/assets/img/people/daniel-k.jpg',
+    stars: 5,
+    title: 'Signed up on a Tuesday, trading by Friday',
+    text: 'The onboarding took minutes and the platform is surprisingly easy to navigate. My first withdrawal was back in my bank account within two days.',
+    date: 'September 2026',
+  },
+  {
+    name: 'Mia P.',
+    location: 'Melbourne',
+    initials: 'MP',
+    photo: '/assets/img/people/mia-p.jpg',
+    stars: 5,
+    title: 'Support that actually answers',
+    text: 'I called with a question about deposits and a real person picked up straight away. That alone put it ahead of every other platform I have tried.',
+    date: 'September 2026',
+  },
+  {
+    name: 'Noah H.',
+    location: 'Brisbane',
+    initials: 'NH',
+    photo: '/assets/img/people/noah-h.jpg',
+    stars: 5,
+    title: 'The analysis engine is the real deal',
+    text: 'It runs quietly in the background and flags setups I would never have spotted. I still stay in control, but it does the heavy lifting.',
+    date: 'August 2026',
+  },
+  {
+    name: 'Ava S.',
+    location: 'Perth',
+    initials: 'AS',
+    photo: '/assets/img/people/ava-s.jpg',
+    stars: 5,
+    title: 'Perfect for beginners',
+    text: 'I knew nothing about crypto when I joined. The guides and the simple dashboard made the learning curve feel almost flat.',
+    date: 'August 2026',
+  },
+  {
+    name: 'Jack M.',
+    location: 'Adelaide',
+    initials: 'JM',
+    photo: '/assets/img/people/jack-m.jpg',
+    stars: 4,
+    title: 'Transparent fees, no surprises',
+    text: 'Every charge is shown before you confirm anything. A few more payment options would be nice, but overall very happy.',
+    date: 'July 2026',
+  },
+  {
+    name: 'Isla F.',
+    location: 'Gold Coast',
+    initials: 'IF',
+    photo: '/assets/img/people/isla-f.jpg',
+    stars: 5,
+    title: 'Withdrawals are genuinely quick',
+    text: 'Requested on a Thursday evening, funds cleared by Saturday morning. Exactly what they promise - no chasing, no delays.',
+    date: 'July 2026',
+  },
+  {
+    name: 'Harry T.',
+    location: 'Canberra',
+    initials: 'HT',
+    photo: '/assets/img/people/harry-t.jpg',
+    stars: 4,
+    title: 'Solid platform, honest team',
+    text: 'The team is upfront about the risks, which I respect. The automated mode fits around my full-time job perfectly.',
+    date: 'June 2026',
+  },
+  {
+    name: 'Zoe L.',
+    location: 'Hobart',
+    initials: 'ZL',
+    photo: '/assets/img/people/zoe-l.jpg',
+    stars: 5,
+    title: 'From skeptical to converted',
+    text: 'I started with the minimum deposit fully expecting to lose it. Six months on, the platform has earned my trust.',
+    date: 'June 2026',
+  },
+]
 
 // Dedicated FAQs page - original phrasing, modeled on the reference
 // site's /faq page (Here to Help + quick answers + 8-question list).
@@ -237,7 +339,7 @@ export const FAQS_PAGE = [
   },
   {
     q: 'Are there any fees or costs?',
-    a: 'Any fee information is displayed clearly before you proceed. There is no registration fee, though other charges may apply depending on the service or payment method. To get started you’ll need a minimum deposit of 347 A$ - payment methods may include credit cards, bank transfers and PayPal.',
+    a: 'Any fee information is displayed clearly before you proceed. There is no registration fee, though other charges may apply depending on the service or payment method. To get started you’ll need a minimum deposit of 250 A$ - payment methods may include credit cards, bank transfers and PayPal.',
   },
   {
     q: 'Do I need experience to start?',

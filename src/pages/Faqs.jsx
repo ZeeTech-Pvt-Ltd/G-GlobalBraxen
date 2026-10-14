@@ -33,7 +33,7 @@ export default function Faqs() {
         <span className="cta-final__ghost" aria-hidden="true">
           FAQ
         </span>
-        <div className="container hero__inner" data-reveal style={{ paddingBlock: 'clamp(64px, 8vw, 110px)', gridTemplateColumns: '1fr' }}>
+        <div className="container hero__inner" data-reveal style={{ paddingBlock: 'clamp(40px, 5vw, 72px)', gridTemplateColumns: '1fr' }}>
           <div style={{ maxWidth: 860 }}>
             <span className="hero__eyebrow">
               <span className="dot" aria-hidden="true" />

@@ -33,7 +33,7 @@ export default function TermsOfUse() {
 
       <LegalSection heading="4. Deposits and Withdrawals">
         <p>
-          The minimum deposit is 347 A$. Withdrawals can be requested at any time from your dashboard
+          The minimum deposit is 250 A$. Withdrawals can be requested at any time from your dashboard
           and are typically processed within 24–48 hours. Additional verification may be required
           for security and compliance purposes.
         </p>

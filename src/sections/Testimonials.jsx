@@ -95,7 +95,7 @@ export default function Testimonials() {
           onMouseLeave={() => setPaused(false)}
         >
           <div className="testimonials__track" ref={trackRef}>
-            {TESTIMONIALS.map(({ name, location, initials, returnPct, quote }) => (
+            {TESTIMONIALS.map(({ name, location, photo, returnPct, quote }) => (
               <article className="testimonial" key={name}>
                 <div
                   className="testimonial__head"
@@ -115,9 +115,12 @@ export default function Testimonials() {
                 <p>“{quote}”</p>
 
                 <div className="testimonial__author">
-                  <span className="testimonial__avatar" aria-hidden="true">
-                    {initials}
-                  </span>
+                  <img
+                    className="testimonial__avatar"
+                    src={photo}
+                    alt={`${name} - verified member`}
+                    loading="lazy"
+                  />
                   <div>
                     <div className="testimonial__name">{name}</div>
                     <div className="testimonial__loc">{location}, Australia</div>
