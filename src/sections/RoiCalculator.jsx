@@ -1,3 +1,5 @@
+'use client'
+
 import { useEffect, useRef, useState } from 'react'
 
 // Mirrors the live site's ROI calculator (g-globalbraxen.com/assets/js/calc.js):

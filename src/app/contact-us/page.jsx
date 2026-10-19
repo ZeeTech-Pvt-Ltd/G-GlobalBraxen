@@ -1,16 +1,15 @@
-import Icon from '../components/Icon'
-import RegistrationForm from '../components/RegistrationForm'
-import useMeta from '../hooks/useMeta'
-import { CONTACT_EMAIL, SITE_URL } from '../data/content'
+import Icon from '../../components/Icon'
+import RegistrationForm from '../../components/RegistrationForm'
+import { pageMeta } from '../../lib/meta'
+import { CONTACT_EMAIL } from '../../data/content'
+
+export const metadata = pageMeta(
+  'Contact G-GlobalBraxen - Get Support & Assistance',
+  'Contact G-GlobalBraxen - questions about the platform, technical assistance or collaborations. Our team is ready to help.',
+  '/contact-us',
+)
 
 export default function Contact() {
-  useMeta({
-    title: 'Contact G-GlobalBraxen - Get Support & Assistance',
-    canonical: `${SITE_URL}/contact-us`,
-    description:
-      'Contact G-GlobalBraxen - questions about the platform, technical assistance or collaborations. Our team is ready to help.',
-  })
-
   return (
     <main className="contact">
       <div className="container contact__inner">

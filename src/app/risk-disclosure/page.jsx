@@ -1,12 +1,15 @@
-import LegalPage, { LegalSection, ContactNote } from '../components/LegalPage'
+import LegalPage, { LegalSection, ContactNote } from '../../components/LegalPage'
+import { pageMeta } from '../../lib/meta'
+
+export const metadata = pageMeta(
+  'Risk Disclosure - G-GlobalBraxen',
+  'G-GlobalBraxen Risk Disclosure - trading financial markets carries substantial risk and is not suitable for every investor.',
+  '/risk-disclosure',
+)
 
 export default function RiskDisclosure() {
   return (
-    <LegalPage
-      title="Risk Disclosure"
-      description="G-GlobalBraxen Risk Disclosure - trading financial markets carries substantial risk and is not suitable for every investor."
-      updated="1 August 2026"
-    >
+    <LegalPage title="Risk Disclosure" updated="1 August 2026">
       <LegalSection heading="General Risk Warning">
         <p>
           Trading in financial markets - including cryptocurrencies, equities, forex, commodities,

@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import Link from 'next/link'
 import FaqList from '../components/FaqList'
 import { FAQS } from '../data/content'
 
@@ -15,10 +15,10 @@ export default function Faq() {
         <FaqList items={FAQS} />
 
         <div className="faq-more" data-reveal>
-          <Link to="/faqs" className="btn btn--outline">
+          <Link href="/faqs" className="btn btn--outline">
             Visit all FAQs
           </Link>
-          <Link to="/contact-us" className="btn btn--lime">
+          <Link href="/contact-us" className="btn btn--lime">
             Contact Us
           </Link>
         </div>

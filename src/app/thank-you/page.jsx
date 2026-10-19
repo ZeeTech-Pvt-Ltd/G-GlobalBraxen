@@ -1,15 +1,14 @@
-import { Link } from 'react-router-dom'
-import Icon from '../components/Icon'
-import useMeta from '../hooks/useMeta'
-import { SITE_URL } from '../data/content'
+import Link from 'next/link'
+import Icon from '../../components/Icon'
+import { pageMeta } from '../../lib/meta'
+
+export const metadata = pageMeta(
+  'Thank You for Registering - G-GlobalBraxen',
+  'Thank you for registering with G-GlobalBraxen. Our team will contact you shortly.',
+  '/thank-you',
+)
 
 export default function ThankYou() {
-  useMeta({
-    title: 'Thank You for Registering - G-GlobalBraxen',
-    canonical: `${SITE_URL}/thank-you`,
-    description: 'Thank you for registering with G-GlobalBraxen. Our team will contact you shortly.',
-  })
-
   return (
     <main className="hero thank-you">
       <div className="hero__glow hero__glow--1" aria-hidden="true" />
@@ -24,7 +23,7 @@ export default function ThankYou() {
           Your registration has been received. Our team will contact you shortly to get you
           started.
         </p>
-        <Link to="/" className="btn btn--lime">
+        <Link href="/" className="btn btn--lime">
           Back to Home
         </Link>
       </div>

@@ -1,17 +1,15 @@
-import HowItWorks from '../sections/HowItWorks'
-import Faq from '../sections/Faq'
-import FinalCta from '../sections/FinalCta'
-import useMeta from '../hooks/useMeta'
-import { SITE_URL } from '../data/content'
+import HowItWorks from '../../sections/HowItWorks'
+import Faq from '../../sections/Faq'
+import FinalCta from '../../sections/FinalCta'
+import { pageMeta } from '../../lib/meta'
+
+export const metadata = pageMeta(
+  'How It Works - G-GlobalBraxen Trading Platform',
+  'How G-GlobalBraxen works - sign up in minutes, deposit from 250 A$, and start trading crypto, forex, equities and more with AI-powered analysis.',
+  '/how-it-works',
+)
 
 export default function HowItWorksPage() {
-  useMeta({
-    title: 'How It Works - G-GlobalBraxen Trading Platform',
-    canonical: `${SITE_URL}/how-it-works`,
-    description:
-      'How G-GlobalBraxen works - sign up in minutes, deposit from 250 A$, and start trading crypto, forex, equities and more with AI-powered analysis.',
-  })
-
   return (
     <main>
       {/* Hero header, modeled on the FAQs page hero */}

@@ -1,18 +1,11 @@
-import useMeta from '../hooks/useMeta'
-import { BRAND, CONTACT_EMAIL, SITE_URL } from '../data/content'
+import { BRAND, CONTACT_EMAIL } from '../data/content'
 
 /**
  * Shared layout for legal pages. Content is template text - have a
- * lawyer review each page before launch.
+ * lawyer review each page before launch. Each legal page exports its
+ * own Next.js metadata.
  */
-export default function LegalPage({ title, description, updated, children }) {
-  const slug = title.toLowerCase().replace(/\s+/g, '-')
-  useMeta({
-    title: `${title} - ${BRAND}`,
-    description,
-    canonical: `${SITE_URL}/${slug}`,
-  })
-
+export default function LegalPage({ title, updated, children }) {
   return (
     <main className="legal">
       <h1>

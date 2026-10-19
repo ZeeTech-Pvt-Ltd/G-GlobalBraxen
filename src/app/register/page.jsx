@@ -1,16 +1,14 @@
-import { Link } from 'react-router-dom'
-import RegistrationForm from '../components/RegistrationForm'
-import useMeta from '../hooks/useMeta'
-import { SITE_URL } from '../data/content'
+import Link from 'next/link'
+import RegistrationForm from '../../components/RegistrationForm'
+import { pageMeta } from '../../lib/meta'
+
+export const metadata = pageMeta(
+  'Register - Create Your G-GlobalBraxen Account',
+  'Create your free G-GlobalBraxen account in minutes - name, email and phone number is all you need to start trading crypto, forex, equities and more.',
+  '/register',
+)
 
 export default function Register() {
-  useMeta({
-    title: 'Register - Create Your G-GlobalBraxen Account',
-    canonical: `${SITE_URL}/register`,
-    description:
-      'Create your free G-GlobalBraxen account in minutes - name, email and phone number is all you need to start trading crypto, forex, equities and more.',
-  })
-
   return (
     <main className="contact">
       <div className="container contact__inner">
@@ -30,7 +28,7 @@ export default function Register() {
 
           <div className="contact__help">
             <span>Prefer to ask questions first?</span>
-            <Link to="/faqs">Visit our FAQs</Link>
+            <Link href="/faqs">Visit our FAQs</Link>
           </div>
         </div>
 

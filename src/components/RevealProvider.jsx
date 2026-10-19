@@ -1,11 +1,17 @@
-import { useEffect } from 'react'
-import { useLocation } from 'react-router-dom'
+'use client'
 
-// Reveals every [data-reveal] element as it scrolls into view.
-// Re-runs on route change so each page's elements are observed.
-export default function useReveal() {
-  const { pathname } = useLocation()
+import { useEffect } from 'react'
+import { usePathname } from 'next/navigation'
+
+// Enables the .js reveal-animation gate, then reveals every
+// [data-reveal] element as it scrolls into view. Re-runs on route
+// change so each page's elements are observed.
+export default function RevealProvider({ children }) {
+  const pathname = usePathname()
+
   useEffect(() => {
+    document.documentElement.classList.add('js')
+
     const els = document.querySelectorAll('[data-reveal]')
     if (!('IntersectionObserver' in window)) {
       els.forEach((el) => el.classList.add('is-visible'))
@@ -25,4 +31,6 @@ export default function useReveal() {
     els.forEach((el) => observer.observe(el))
     return () => observer.disconnect()
   }, [pathname])
+
+  return children
 }

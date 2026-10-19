@@ -1,9 +1,0 @@
-# SPA routing: send any path that isn't a real file/directory to the app,
-# so client-side routes (/faqs, /about-us, 404 page, ...) work on Apache hosts.
-RewriteEngine On
-RewriteBase /
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /index.html [L]
-
-ErrorDocument 404 /index.html

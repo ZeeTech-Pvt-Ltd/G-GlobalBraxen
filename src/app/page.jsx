@@ -1,5 +1,4 @@
-import useMeta from '../hooks/useMeta'
-import { SITE_URL } from '../data/content'
+import { pageMeta } from '../lib/meta'
 import Hero from '../sections/Hero'
 import RoiCalculator from '../sections/RoiCalculator'
 import Stats from '../sections/Stats'
@@ -13,13 +12,13 @@ import Testimonials from '../sections/Testimonials'
 import Faq from '../sections/Faq'
 import FinalCta from '../sections/FinalCta'
 
+export const metadata = pageMeta(
+  'G-GlobalBraxen - Official Crypto Trading Platform Australia',
+  "G-GlobalBraxen - Australia's online trading platform. Trade crypto, forex, equities and more with AI-powered analysis and 24/7 access.",
+  '/',
+)
+
 export default function Home() {
-  useMeta({
-    title: 'G-GlobalBraxen - Official Crypto Trading Platform Australia',
-    description:
-      "G-GlobalBraxen - Australia's online trading platform. Trade crypto, forex, equities and more with AI-powered analysis and 24/7 access.",
-    canonical: `${SITE_URL}/`,
-  })
   return (
     <>
       <Hero />

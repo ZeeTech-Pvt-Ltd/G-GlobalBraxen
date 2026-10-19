@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import Link from 'next/link'
 import Logo from './Logo'
 import { BRAND, CONTACT_EMAIL } from '../data/content'
 
@@ -39,7 +39,7 @@ export default function Footer() {
             <ul>
               {PLATFORM_LINKS.map(({ label, to }) => (
                 <li key={to}>
-                  <Link to={to}>{label}</Link>
+                  <Link href={to}>{label}</Link>
                 </li>
               ))}
             </ul>
@@ -50,7 +50,7 @@ export default function Footer() {
             <ul>
               {LEGAL_LINKS.map(({ label, to }) => (
                 <li key={to}>
-                  <Link to={to}>{label}</Link>
+                  <Link href={to}>{label}</Link>
                 </li>
               ))}
             </ul>

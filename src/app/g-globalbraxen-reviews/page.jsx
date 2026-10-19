@@ -1,33 +1,32 @@
-import Icon from '../components/Icon'
-import ReviewsBand from '../sections/ReviewsBand'
-import Testimonials from '../sections/Testimonials'
-import FinalCta from '../sections/FinalCta'
-import useMeta from '../hooks/useMeta'
-import { BRAND, RATING, RATING_BREAKDOWN, REVIEW_CARDS, SITE_URL } from '../data/content'
+import Icon from '../../components/Icon'
+import ReviewsBand from '../../sections/ReviewsBand'
+import Testimonials from '../../sections/Testimonials'
+import FinalCta from '../../sections/FinalCta'
+import { pageMeta } from '../../lib/meta'
+import { BRAND, RATING, RATING_BREAKDOWN, REVIEW_CARDS, SITE_URL } from '../../data/content'
+
+export const metadata = pageMeta(
+  `${BRAND} Reviews - Ratings & Member Feedback`,
+  `${BRAND} reviews from Australian traders - overall rating ${RATING.score}/5 from ${RATING.reviews} member reviews. Read verified feedback about the platform.`,
+  '/g-globalbraxen-reviews',
+)
+
+const reviewSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  '@id': `${SITE_URL}/#organization`,
+  name: BRAND,
+  url: SITE_URL,
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: RATING.score,
+    reviewCount: RATING.reviews,
+    bestRating: '5',
+    worstRating: '1',
+  },
+}
 
 export default function Reviews() {
-  useMeta({
-    title: `${BRAND} Reviews - Ratings & Member Feedback`,
-    canonical: `${SITE_URL}/g-globalbraxen-reviews`,
-    description:
-      `${BRAND} reviews from Australian traders - overall rating ${RATING.score}/5 from ${RATING.reviews} member reviews. Read verified feedback about the platform.`,
-  })
-
-  const reviewSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'Organization',
-    '@id': `${SITE_URL}/#organization`,
-    name: BRAND,
-    url: SITE_URL,
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: RATING.score,
-      reviewCount: RATING.reviews,
-      bestRating: '5',
-      worstRating: '1',
-    },
-  }
-
   return (
     <main>
       <script

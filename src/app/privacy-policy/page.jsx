@@ -1,12 +1,15 @@
-import LegalPage, { LegalSection, ContactNote } from '../components/LegalPage'
+import LegalPage, { LegalSection, ContactNote } from '../../components/LegalPage'
+import { pageMeta } from '../../lib/meta'
+
+export const metadata = pageMeta(
+  'Privacy Policy - G-GlobalBraxen',
+  'Read the G-GlobalBraxen Privacy Policy - how we collect, use and protect your personal information.',
+  '/privacy-policy',
+)
 
 export default function PrivacyPolicy() {
   return (
-    <LegalPage
-      title="Privacy Policy"
-      description="Read the G-GlobalBraxen Privacy Policy - how we collect, use and protect your personal information."
-      updated="1 August 2026"
-    >
+    <LegalPage title="Privacy Policy" updated="1 August 2026">
       <LegalSection heading="1. Who We Are">
         <p>
           This Privacy Policy explains how G-GlobalBraxen ("we", "us", "our") collects, uses and

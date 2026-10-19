@@ -1,26 +1,25 @@
-import { Link } from 'react-router-dom'
-import FaqList from '../components/FaqList'
-import useMeta from '../hooks/useMeta'
-import { FAQS_PAGE, FAQ_QUICK_CARDS, SITE_URL } from '../data/content'
+import Link from 'next/link'
+import FaqList from '../../components/FaqList'
+import { pageMeta } from '../../lib/meta'
+import { FAQS_PAGE, FAQ_QUICK_CARDS } from '../../data/content'
+
+export const metadata = pageMeta(
+  'G-GlobalBraxen FAQs - Fees, Security & How It Works',
+  'G-GlobalBraxen frequently asked questions - how the platform works, security, withdrawals, fees, and more.',
+  '/faqs',
+)
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: FAQS_PAGE.map(({ q, a }) => ({
+    '@type': 'Question',
+    name: q,
+    acceptedAnswer: { '@type': 'Answer', text: a },
+  })),
+}
 
 export default function Faqs() {
-  useMeta({
-    title: 'G-GlobalBraxen FAQs - Fees, Security & How It Works',
-    canonical: `${SITE_URL}/faqs`,
-    description:
-      'G-GlobalBraxen frequently asked questions - how the platform works, security, withdrawals, fees, and more.',
-  })
-
-  const faqSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: FAQS_PAGE.map(({ q, a }) => ({
-      '@type': 'Question',
-      name: q,
-      acceptedAnswer: { '@type': 'Answer', text: a },
-    })),
-  }
-
   return (
     <main>
       <script
@@ -79,7 +78,7 @@ export default function Faqs() {
         <div className="container faqs-cta">
           <h2>Can&apos;t find what you&apos;re looking for?</h2>
           <p>Our team is ready to help with anything else you need.</p>
-          <Link to="/contact-us" className="btn btn--lime">
+          <Link href="/contact-us" className="btn btn--lime">
             Contact Us
           </Link>
         </div>
