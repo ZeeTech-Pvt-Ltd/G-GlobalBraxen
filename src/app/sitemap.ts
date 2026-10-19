@@ -8,6 +8,7 @@ export const dynamic = 'force-static'
 const ROUTES = [
   '/',
   '/about-us',
+  '/features',
   '/how-it-works',
   '/register',
   '/g-globalbraxen-reviews',

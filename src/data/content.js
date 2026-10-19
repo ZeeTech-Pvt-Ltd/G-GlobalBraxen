@@ -16,6 +16,7 @@ export const OFFER_NAME = 'G-GlobalBraxen-Site'
 export const NAV_LINKS = [
   { label: 'Home', to: '/' },
   { label: 'About Us', to: '/about-us' },
+  { label: 'Features', to: '/features' },
   { label: 'How It Works', to: '/how-it-works' },
   { label: 'Reviews', to: '/g-globalbraxen-reviews' },
   { label: 'Contact Us', to: '/contact-us' },
