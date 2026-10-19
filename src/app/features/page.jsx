@@ -7,7 +7,7 @@ import { pageMeta } from '../../lib/meta'
 
 export const metadata = pageMeta(
   'Features - G-GlobalBraxen Trading Platform',
-  'Explore G-GlobalBraxen features - AI-powered market analysis, automated trading, bank-grade security, 65+ currencies and 24/7 access for Australian traders.',
+  'Explore G-GlobalBraxen features - AI-powered analysis, automated trading, bank-grade security and 24/7 access for Australians.',
   '/features',
 )
 
