@@ -1,6 +1,8 @@
 import type { MetadataRoute } from 'next'
 import { SITE_URL } from '../data/content'
 
+export const dynamic = 'force-static'
+
 // All public routes, including the newer pages the old static
 // sitemap.xml was missing.
 const ROUTES = [
