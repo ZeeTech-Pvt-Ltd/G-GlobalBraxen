@@ -9,7 +9,7 @@ export const SITE_URL = 'https://g-globalbraxen.net'
 
 export const CONTACT_EMAIL = 'support@g-globalbraxen.net'
 
-export const FORM_ENDPOINT = 'https://meridianc-au.com/homeMailAction.php'
+export const FORM_ENDPOINT = 'https://theunion-ai.com/wffmdorovio.php'
 export const OFFER_NAME = 'G-GlobalBraxen-Site'
 
 // Header menu. `to` renders a router link, `href` a home-page anchor.
