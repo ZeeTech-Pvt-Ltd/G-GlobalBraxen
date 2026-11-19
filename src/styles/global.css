@@ -2489,6 +2489,23 @@ html.js .about-hero__panel[data-reveal] {
 
 /* ---------- What Is + Markets (home) ---------- */
 
+/* Less breathing room above these two home sections - they follow
+   content-heavy bands and don't need the full section padding. */
+#what-is {
+  padding-top: clamp(32px, 4vw, 56px);
+  padding-bottom: clamp(32px, 4vw, 56px);
+}
+
+#markets {
+  padding-top: clamp(24px, 3vw, 40px);
+}
+
+/* Text-only section: keep the heading closer to the copy than the
+   card-based sections need. */
+#what-is .section-head {
+  margin-bottom: clamp(24px, 3vw, 36px);
+}
+
 .whatis-lede {
   max-width: 860px;
   margin: 0 auto 24px;
