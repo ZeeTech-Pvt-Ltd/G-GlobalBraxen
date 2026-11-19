@@ -2,6 +2,8 @@ import { pageMeta } from '../lib/meta'
 import Hero from '../sections/Hero'
 import RoiCalculator from '../sections/RoiCalculator'
 import Stats from '../sections/Stats'
+import WhatIs from '../sections/WhatIs'
+import Markets from '../sections/Markets'
 import TrustUs from '../sections/TrustUs'
 import ReviewsBand from '../sections/ReviewsBand'
 import About from '../sections/About'
@@ -24,6 +26,8 @@ export default function Home() {
       <Hero />
       <RoiCalculator />
       <Stats />
+      <WhatIs />
+      <Markets />
       <HowItWorks />
       <About />
       <Benefits />

@@ -190,6 +190,29 @@ export const TESTIMONIALS = [
   },
 ]
 
+export const MARKETS = [
+  {
+    title: 'Crypto',
+    icon: 'bolt',
+    text: 'A fast-moving market that never closes, with signals on leading coins such as Bitcoin and Ethereum.',
+  },
+  {
+    title: 'Forex',
+    icon: 'coins',
+    text: "Trade the world's major currencies, including pairs like EUR/USD, GBP/USD and USD/JPY.",
+  },
+  {
+    title: 'Stocks',
+    icon: 'gauge',
+    text: 'Follow price swings in well-known global companies across different sectors.',
+  },
+  {
+    title: 'Commodities',
+    icon: 'vault',
+    text: 'Receive setups on gold, silver and oil, markets shaped by world events and supply levels.',
+  },
+]
+
 export const BAND_QUOTES = [
   {
     quote: 'Signed up on a Tuesday, made my first trade by Friday. Genuinely impressed.',

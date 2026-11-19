@@ -2486,3 +2486,29 @@ html.js .about-hero__panel[data-reveal] {
     grid-template-columns: 260px 1fr;
   }
 }
+
+/* ---------- What Is + Markets (home) ---------- */
+
+.whatis-lede {
+  max-width: 860px;
+  margin: 0 auto 24px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--ink-muted);
+}
+
+.whatis-close {
+  max-width: 860px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--ink-muted);
+}
+
+.markets-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
